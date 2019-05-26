@@ -10,15 +10,19 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </link>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
   <title>Beta Bot</title>
 </head>
 
-<body class="bg-light">
+<body class="text-dark bg-light">
   <div class="container">
     <br>
     <!-- Menu -->
     <nav class="rounded shadow-sm navbar navbar-expand-lg navbar-light bg-white">
-      <a class="navbar-brand text-dark" href="#"> <span><img src="./img/icon.png" height="50px" width="50px"></span> Beta Bot</a>
+      <a class="navbar-brand text-dark" href="#"> <span><img src="./img/icon.png" height="50px" width="50px"></span>
+        Beta Bot</a>
       <ul class="nav nav-pills ml-auto">
         <li class="nav-item m-2">
           <a class="nav-link text-dark" href="https://betabotwebsite.github.io/HomePage/">Home</a>
@@ -30,7 +34,53 @@
     </nav>
     <!-- Content -->
     <div class="rounded shadow-sm bg-white p-2">
-        <p class="display-1">About Page</p>
+      <br>
+      <div class="Information">
+        <p class="h2 ml-3">Information</p>
+        <br>
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <p class="text-center"><img class="border rounded-circle" src="./img/avatar.png" alt="" width="50%"></p>
+          </div>
+          <div class="col-8">
+            <p class="font-weight-bold lead"> Trang Nguyen Anh Thuan</p>
+            <p class="lead">Bachelor Of Information Technology</p>
+            <br>
+            <p><i class="fas fa-envelope"></i> <span class="h6">Email: </span> trangnguyenanhthuan@gmail.com</p>
+            <p><i class="fab fa-github"></i> <span class="h6">GitHub: </span> https://github.com/trangnguyenanhthuan</p>
+          </div>
+        </div>
+      </div>
+      <hr class="text-dark ml-4 mr-4">
+      <div class="Skill">
+        <p class="h2 ml-3">Skills</p>
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <p class="lead ml-4">Ielts</p>
+            <div class="chart-container d-flex ml-auto mr-auto">
+              <canvas id="ieltsChart"></canvas>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <p class="lead ml-4">Knowledge</p>
+            <div class="chart-container d-flex ml-auto mr-auto">
+              <canvas id="skillsChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="text-dark ml-4 mr-4">
+      <div class="Certificate">
+        <p class="h2 ml-3">Certificates</p>
+        <div class="row">
+        </div>
+      </div>
+      <hr class="text-dark ml-4 mr-4">
+      <div class="Achievement">
+        <p class="h2 ml-3">Achievements</p>
+        <div class="row">
+        </div>
+      </div>
     </div>
   </div>
 
@@ -45,6 +95,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script src="index.js"></script>
 </body>
 
 </html>
